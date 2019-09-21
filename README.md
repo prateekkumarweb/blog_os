@@ -1,11 +1,23 @@
 # blog_os
 
-Add target
 ```
-rustup target add thumbv7em-none-eabihf
+cargo install cargo-xbuild
 ```
 
-Build
 ```
-cargo build --target thumbv7em-none-eabihf
+rustup component add rust-src
+```
+
+```
+cargo install bootimage --version "^0.7.7"
+```
+
+```
+rustup component add llvm-tools-preview
+```
+
+Install qemu
+
+```
+cargo xrun
 ```
